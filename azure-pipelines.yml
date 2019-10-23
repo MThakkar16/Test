@@ -1,7 +1,5 @@
 # HTML
-- task: RunFromFileSystemTask@1
-  inputs:
-    testPathInput: 'Test name=”GUITest7” path="C:\Automation Framework\TestScripts"'
+
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -18,3 +16,6 @@ steps:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
+- task: RunFromFileSystemTask@1
+  inputs:
+    testPathInput: 'Test name="GUITest7" path="C:\Automation Framework\TestScripts"'
