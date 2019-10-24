@@ -30,4 +30,4 @@ steps:
     msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
 - task: RunFromFileSystemTask@1
   inputs:
-    testPathInput: 'C:\Automation Framework\TestScripts'
+    testPathInput: 'C:\Users\prpatil\Sample'
